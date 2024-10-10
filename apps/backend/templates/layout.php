@@ -61,7 +61,7 @@
                 ?>
 
                 loadingSocketIo = true;
-                $.getScript(socketIoAddress+"/socket.io/socket.io.js", function(){
+                $.getScript("http://"+socketIoAddress+"/socket.io/socket.io.js", function(){
                     socket = io(socketIoAddress, {
                         auth: {
                             token: 'Bearer <?php echo $token; ?>'
